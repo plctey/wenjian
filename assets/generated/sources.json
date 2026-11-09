@@ -1,0 +1,64 @@
+{
+  "generated_from_user_documents": [
+    {
+      "file": "facility_aerial.jpg",
+      "document": "_____Mission_EV_Assembly_Proposal_CN_2026_04cd.pdf",
+      "page": 7
+    },
+    {
+      "file": "facility_entry.jpg",
+      "document": "_____Mission_EV_Assembly_Proposal_CN_2026_04cd.pdf",
+      "page": 42
+    },
+    {
+      "file": "facility_loading.jpg",
+      "document": "_____Mission_EV_Assembly_Proposal_CN_2026_04cd.pdf",
+      "page": 22
+    },
+    {
+      "file": "visitor_experience.jpg",
+      "document": "_____Mission_EV_Assembly_Proposal_CN_2026_04cd.pdf",
+      "page": 10
+    },
+    {
+      "file": "factory_gallery.jpg",
+      "document": "_____Mission_EV_Assembly_Proposal_CN_2026_04cd.pdf",
+      "page": 12
+    },
+    {
+      "file": "light_manufacturing.jpg",
+      "document": "_____Mission_EV_Assembly_Proposal_CN_2026_04cd.pdf",
+      "page": 20
+    },
+    {
+      "file": "mixed_use.jpg",
+      "document": "_____Mission_EV_Assembly_Proposal_CN_2026_04cd.pdf",
+      "page": 29
+    },
+    {
+      "file": "parcel_zoning_map.jpg",
+      "document": "12458_Subdivision_Mission__Business_Plan_CN_2026_Final_1fc0.pdf",
+      "page": 31
+    }
+  ],
+  "web_images": [
+    {
+      "file": "mission_fraser_river.jpg",
+      "title": "File:FraserRiver.jpg",
+      "description_url": "https://commons.wikimedia.org/wiki/File:FraserRiver.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/FraserRiver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "file": "vancouver_centerm.jpg",
+      "title": "File:Vancouver (BC, Canada), Vancouver Centerm Terminal -- 2022 -- 1848.jpg",
+      "description_url": "https://commons.wikimedia.org/wiki/File:Vancouver_(BC,_Canada),_Vancouver_Centerm_Terminal_--_2022_--_1848.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Vancouver_%28BC%2C_Canada%29%2C_Vancouver_Centerm_Terminal_--_2022_--_1848.jpg/3840px-Vancouver_%28BC%2C_Canada%29%2C_Vancouver_Centerm_Terminal_--_2022_--_1848.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "file": "distribution_centre.jpg",
+      "title": "File:Distribution Center Rhenus Logistics Ekkersrijt.jpg",
+      "description_url": "https://commons.wikimedia.org/wiki/File:Distribution_Center_Rhenus_Logistics_Ekkersrijt.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Distribution_Center_Rhenus_Logistics_Ekkersrijt.jpg/3840px-Distribution_Center_Rhenus_Logistics_Ekkersrijt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ]
+}
