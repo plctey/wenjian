@@ -9,7 +9,7 @@ import urllib.parse
 import urllib.request
 
 API = "https://commons.wikimedia.org/w/api.php"
-UA = {"User-Agent": "nunavik-ppt-builder/1.0 (presentation image research)"}
+UA = {"User-Agent": "inuvik-ppt-builder/1.0 (presentation image research)"}
 
 
 def api(params):

@@ -1,4 +1,4 @@
-"""Build the NUNAVIK comprehensive development plan deck from the source PDF content."""
+"""Build the Inuvik comprehensive development plan deck from the source PDF content."""
 import json
 from pathlib import Path
 
@@ -15,7 +15,7 @@ from pptx.util import Inches, Pt
 
 HERE = Path(__file__).parent
 PHOTOS = HERE / "assets" / "photos"
-OUTPUT = HERE / "努纳维克NUNAVIK地区综合发展规划.pptx"
+OUTPUT = HERE / "因纽维克Inuvik地区综合发展规划.pptx"
 CREDITS = json.loads((HERE / "photo_credits.json").read_text())
 
 FONT = "Microsoft YaHei"
@@ -162,7 +162,7 @@ def chevrons(slide, x, y, w, h, steps, size=13):
 def footer(slide):
     page_no[0] += 1
     hline(slide, L, 7.0, CW)
-    text(slide, L, 7.05, 6, 0.3, "努纳维克 NUNAVIK 地区综合发展规划", size=9, color=MUTED)
+    text(slide, L, 7.05, 6, 0.3, "因纽维克 Inuvik 地区综合发展规划", size=9, color=MUTED)
     text(slide, R - 1.0, 7.05, 1.0, 0.3, str(page_no[0]), size=9, color=MUTED, align=PP_ALIGN.RIGHT)
 
 
@@ -199,12 +199,13 @@ photo(s, "cover_aurora", 5.2, 0, SW - 5.2, SH, 0.45)
 rect(s, 0, 0, 5.6, SH, NAVY)
 rect(s, 5.6, 0, 0.06, SH, BLUE)
 text(s, 0.8, 1.6, 4.6, 0.35, "COMPREHENSIVE DEVELOPMENT PLAN", size=11, color=SKY, bold=True)
-text(s, 0.8, 2.1, 4.7, 0.9, "努纳维克 NUNAVIK", size=34, color=WHITE, bold=True)
+text(s, 0.8, 2.1, 4.7, 0.9, "因纽维克 Inuvik", size=34, color=WHITE, bold=True)
 text(s, 0.8, 2.9, 4.7, 0.8, "地区综合发展规划", size=30, color=WHITE, bold=True)
 rect(s, 0.85, 3.9, 0.8, 0.05, SKY)
 text(s, 0.8, 4.15, 4.6, 1.6,
-     ["学校教学大楼建设项目", "绿色能源项目", "人才与移民基金计划", "“INUVIK 极光世界”旅游项目"],
+     ["学校教学大楼建设项目", "绿色能源项目", "人才与移民基金计划", "“因纽维克极光世界”旅游项目"],
      size=13, color=RGBColor(0xD6, 0xE2, 0xEE), spacing=1.5)
+text(s, 0.8, 6.45, 4.6, 0.35, "加拿大 · 西北地区（Northwest Territories）", size=11, color=SKY)
 page_no[0] += 1
 
 # ---------------------------------------------------------------- Contents
@@ -218,7 +219,7 @@ items = [
     ("01", "学校教学大楼建设项目", "引入中国建设力量 · 成立筹备项目公司 · 前期预算与资金安排"),
     ("02", "绿色能源项目", "风力发电 · 太阳能光伏 · 小型水力发电 · 储能公司"),
     ("03", "人才与移民基金计划", "向 UN 申请设立“NWT”或因纽维克式城市、移民基金"),
-    ("04", "“INUVIK 极光世界”旅游项目", "打造北美顶级旅游目的地，带动经济、惠及居民"),
+    ("04", "“因纽维克极光世界”旅游项目", "打造北美顶级旅游目的地，带动经济、惠及居民"),
 ]
 for i, (n, t, d) in enumerate(items):
     y = 2.2 + i * 1.15
@@ -302,7 +303,7 @@ for j, f in enumerate(fields):
     text(s, fx_ + 0.2, fy_, fw - 0.3, 0.42, f, size=13, color=TEXT, anchor=MSO_ANCHOR.MIDDLE)
 label_box(s, x0, 4.7, "B")
 text(s, x0 + 0.6, 4.66, 6.3, 0.5, "引入国际资金：平衡资金缺口", size=16, color=NAVY, bold=True, anchor=MSO_ANCHOR.MIDDLE)
-flow = [("通过移民", "从国际引入资金"), ("投入建设", "投入到 INUVIK 建设之中"), ("平衡缺口", "弥补地区发展资金缺口")]
+flow = [("通过移民", "从国际引入资金"), ("投入建设", "投入到因纽维克建设之中"), ("平衡缺口", "弥补地区发展资金缺口")]
 bw = (R - x0 - 2 * 0.35) / 3
 for j, (h, d) in enumerate(flow):
     bx = x0 + j * (bw + 0.35)
@@ -313,11 +314,11 @@ for j, (h, d) in enumerate(flow):
         a = rect(s, bx + bw + 0.08, 5.82, 0.2, 0.3, BLUE, shape=MSO_SHAPE.RIGHT_ARROW)
 
 # ---------------------------------------------------------------- 04
-section_slide("04", "“INUVIK 极光世界”\n旅游项目", "INUVIK AURORA WORLD",
+section_slide("04", "“因纽维克极光世界”\n旅游项目", "INUVIK AURORA WORLD",
               "建立北美（至少加拿大）最大、最豪华、最有吸引力的旅游项目。",
               "aurora_teepees", "加拿大北部极光（示意）")
 
-s = content_slide("“INUVIK 极光世界”：五大主题板块",
+s = content_slide("“因纽维克极光世界”：五大主题板块",
                   "目标：建立北美（至少加拿大）最大、最豪华、最有吸引力的旅游项目", "04 极光世界旅游项目")
 zones = [
     ("tropical", "A", "热带风情乐园", "不去夏威夷", "人造沙滩、温泉海浪，场内四季如春"),
@@ -497,7 +498,7 @@ text(s, 0, 1.0, SW, 0.35, "SUMMARY", size=12, color=SKY, bold=True, align=PP_ALI
 text(s, 0, 1.4, SW, 0.8, "四大项目  协同发展", size=34, color=WHITE, bold=True, align=PP_ALIGN.CENTER)
 rect(s, SW / 2 - 0.4, 2.3, 0.8, 0.05, SKY)
 summary = [("01", "教育奠基", "学校教学大楼建设"), ("02", "能源保障", "风光水储多能互补"),
-           ("03", "人才资金", "UN 城市与移民基金"), ("04", "旅游引擎", "INUVIK 极光世界")]
+           ("03", "人才资金", "UN 城市与移民基金"), ("04", "旅游引擎", "因纽维克极光世界")]
 sw_, sg = 2.6, 0.3
 x0 = (SW - (4 * sw_ + 3 * sg)) / 2
 for i, (n, h, d) in enumerate(summary):
